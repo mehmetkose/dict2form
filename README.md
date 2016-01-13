@@ -6,10 +6,10 @@
 
 
 ```python
-import dict2form
+from dict2form import dict2form
 my_dictionary = {'name': 'Mehmet', 'surname': 'Kose'}
-html_form = dict2form.dict2form(my_dictionary, name="profile", method="post", xsrf="XXXXXXXX")
-print(html_form)
+form = dict2form(my_dictionary, name="profile", method="post", xsrf="XXXXXXXX")
+print(form)
 ```
 
 As we'll see a form like this:
@@ -19,5 +19,6 @@ As we'll see a form like this:
 	<input name='profile[name]' value='Mehmet'>
 	<input name='profile[surname]' value='Kose'>
 	<input type="hidden" name="_xsrf" value="XXXXXXXX"/>
+	<input type='submit' value='Submit'>
 </form>
 ```
