@@ -28,3 +28,11 @@ As we'll see a form like this:
 	<input type='submit' value='Submit'>
 </form>
 ```
+
+hide inputs
+==========
+```python
+from dict2form import dict2form
+my_dictionary = {'name': 'Mehmet', 'surname': 'Kose', **'password':'password'**}
+form = dict2form(my_dictionary, name="profile", **hide=['password']**)
+```
