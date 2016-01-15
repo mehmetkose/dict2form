@@ -1,9 +1,15 @@
-# dict2form
+dict2form
+==========
 
-*python dictionary object to html5 json form generator*
+python dictionary object to html5 json form generator
 
+installation
+==========
 **pip install dict2form**
 
+
+usage
+==========
 
 ```python
 from dict2form import dict2form
