@@ -2,9 +2,9 @@ from distutils.core import setup
 
 setup(
     name='dict2form',
-    version='0.3',
-    packages=[],
-    url='https://mehmetkose.github.io',
+    version='0.4',
+    packages=['dict2form'],
+    url='https://github.com/mehmetkose/dict2form',
     license='Apache2',
     author='Mehmet Kose',
     author_email='mehmetkose.py@gmail.com',
