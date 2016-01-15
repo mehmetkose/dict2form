@@ -1,13 +1,12 @@
 import unittest
 from dict2form import dict2form
 
-myDict = {'unit':'tests'}
+myDict = {'unit': 'tests'}
 
-myDictWithSub = {'lorem':'ipsum', 'sit':{'dolor':'amet'}}
+myDictWithSub = {'lorem': 'ipsum', 'sit': {'dolor': 'amet'}}
 
 
 class TestStringMethods(unittest.TestCase):
-
 
     def test_type(self):
         self.assertIsInstance(dict2form(myDict), str)
