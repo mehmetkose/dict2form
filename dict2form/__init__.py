@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
 
+# python dictionary object to html5 json form generator.
+# https://github.com/mehmetkose/dict2form
+
+# Licensed under the MIT license:
+# http://www.opensource.org/licenses/mit-license
+# Copyright (c) 2016 Mehmet Kose mehmetkose.py@gmail.com
 
 def generate_input(dict_object, key, hide, name):
     input_stack = ""

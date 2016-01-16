@@ -5,7 +5,7 @@ setup(
     version='0.4',
     packages=['dict2form'],
     url='https://github.com/mehmetkose/dict2form',
-    license='Apache2',
+    license='MIT License',
     author='Mehmet Kose',
     author_email='mehmetkose.py@gmail.com',
     description='python dictionary object to html5 json form generator.'
