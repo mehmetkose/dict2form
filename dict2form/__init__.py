@@ -14,9 +14,15 @@ def generate_input(dict_object, key, hide, name):
         return
     elif isinstance(dict_object[key], str) or isinstance(dict_object[key], unicode):
         label_str = "<label for='%s[%s]'>%s</label>" % (name, key, key)
-        input_input = "<input name='%s[%s]' value='%s'><br />" % (
+        input_str = "<input name='%s[%s]' value='%s'><br />" % (
             name, key, dict_object[key])
-        input_stack += "%s\n%s" % (label_str, input_input)
+        input_stack += "%s\n%s" % (label_str, input_str)
+    elif isinstance(dict_object[key], list):
+        label_str = "<label for='%s[%s]'>%s</label>" % (name, key, key)
+        input_str = ""
+        for value in [item for item in enumerate(dict_object[key])]:
+            input_str += "<input name='%s[%s][%s]' value='%s'>" % (name, key, value[0], value[1])
+        input_stack += "%s\n%s" % (label_str, input_str)
     elif isinstance(dict_object[key], dict):
         input_stack += "<div style='margin-left:1em;'>"
         input_stack += generate_inputs(dict_object[key], hide, name)
