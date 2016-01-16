@@ -7,6 +7,7 @@ my_dict_with_sub_dict = {'lorem': 'ipsum', 'sit': {'dolor': 'amet'}}
 
 my_dict_with_sub_list = {'lorem': 'ipsum', 'sit': ['dolor', 'amet']}
 
+
 class TestStringMethods(unittest.TestCase):
 
     def test_type(self):
@@ -22,7 +23,6 @@ class TestStringMethods(unittest.TestCase):
         self.assertIn("dolor", dict2form(my_dict_with_sub_dict))
 
     def test_sub_list(self):
-    	print(my_dict_with_sub_list)
         self.assertIn("dolor", dict2form(my_dict_with_sub_list))
 
 
