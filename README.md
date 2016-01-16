@@ -3,6 +3,8 @@ dict2form
 
 python dictionary object to html5 json form generator
 
+more information about [HTML JSON form submission](https://www.w3.org/TR/html-json-forms)
+
 installation
 ==========
 **pip install dict2form**
