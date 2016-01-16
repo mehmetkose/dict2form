@@ -13,7 +13,7 @@ def generate_input(dict_object, key, hide, name):
     input_stack = ""
     if key in hide:
         return
-    elif isinstance(dict_object[key], str) or isinstance(dict_object[key], unicode):
+    elif isinstance(dict_object[key], str):
         label_str = "<label for='%s[%s]'>%s</label>" % (name, key, key)
         input_str = "<input name='%s[%s]' value='%s'>\n" % (
             name, key, dict_object[key])
