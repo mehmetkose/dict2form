@@ -24,7 +24,7 @@ def generate_input(dict_object, key, hide, name):
             input_str += "<input name='%s[%s][%s]' value='%s'>" % (name, key, value[0], value[1])
         input_stack += "%s\n%s" % (label_str, input_str)
     elif isinstance(dict_object[key], dict):
-        input_stack += "<div style='margin-left:1em;'>"
+        input_stack += "<div class='sub'>"
         input_stack += generate_inputs(dict_object[key], hide, name)
         input_stack += "</div>"
     return input_stack
