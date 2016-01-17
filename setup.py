@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='dict2form',
-    version='0.5',
+    version='0.6',
     packages=['dict2form'],
     url='https://github.com/mehmetkose/dict2form',
     license='MIT License',
