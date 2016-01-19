@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	{% autoescape xhtml_escape %}
+		{% module FormModule(user, name='user', method='post', xsrf=xsrf_form_html()) %}
+	{% autoescape None %}
+
+</body>
+</html>
