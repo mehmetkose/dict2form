@@ -56,8 +56,8 @@ print(form)
 
 defaults
 ==========
-name = object
-hide = []
-method = GET
-xsrf = None
-submit_name = Submit
+* name = object
+* hide = []
+* method = GET
+* xsrf = None
+* submit_name = Submit
